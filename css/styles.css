@@ -230,7 +230,7 @@ span {
 
 @media (max-width: 500px) {
   .game-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     width: 100%;
   }
 }
