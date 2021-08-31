@@ -1,3 +1,5 @@
+/***************CLASS SELECTORS*******************/
+
 .container {
   width: 70%;
   margin: auto;
@@ -77,6 +79,8 @@
   visibility: visible;
 }
 
+/***************TAG SELECTORS*******************/
+
 body {
   background-color: #393e46;
 }
@@ -122,6 +126,8 @@ span {
   display: inline-block;
   margin: auto;
 }
+
+/***************MEDIA SCREEN SELECTORS*******************/
 
 @media (max-width: 1215px) {
   .game-title {
