@@ -189,6 +189,10 @@ span {
 }
 
 @media (max-width: 664px) {
+  .container {
+    margin-top: 7%;
+  }
+  
   .game-title {
     font-size: 4.5rem;
     width: 100%;
