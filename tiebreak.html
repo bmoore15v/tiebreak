@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tie Break</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="game-title"><span class="flagFlip">🚩</span> Tie Break <span>🚩</span></h1>
+
+      <div class="info-container">
+        <div id="results" class="instructions tool-tip">Let's see who wins! <span class="tool-tip icon"><i class="far fa-question-circle"></i></span
+            ><span class="tool-tip-text">
+              Hit space, or click roll to see who wins</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="dice">
+          <p>Player 1</p>
+          <img class="img1" src="" />
+        </div>
+
+        <div class="dice">
+          <p>Player 2</p>
+          <img class="img2" src="" />
+        </div>
+      </div>
+
+      <div>
+        <button id="buttonReset" class="rollBtn rollBtn:hover" onclick="changeDice()">
+          Roll
+        </button>
+      </div>
+
+      <div>
+        <p class="winnerText"></p>
+      </div>
+    </div>
+
+    <script src="js/tiebreak.js"></script>
+  </body>
+
+  <footer>🎲 © 2021 Tie Break 🎲</footer>
+</html>
