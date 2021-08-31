@@ -222,6 +222,9 @@ span {
     top: 45px;
     left: 10%;
   }
+  
+  .tool-tip:active .tool-tip-text {
+    visibility: visible;
 
   p {
     font-size: 1.5rem;
@@ -232,5 +235,9 @@ span {
   .game-title {
     font-size: 4rem;
     width: 100%;
+  }
+  
+  .instructions a:active {
+    visibility: visible;
   }
 }
