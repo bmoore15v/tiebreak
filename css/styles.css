@@ -225,6 +225,7 @@ span {
   
   .tool-tip:active .tool-tip-text {
     visibility: visible;
+  ]
 
   p {
     font-size: 1.5rem;
@@ -236,3 +237,7 @@ span {
     font-size: 3.5rem;
     width: 100%;
   ]
+    .icon {
+    display: none;
+  }
+}
