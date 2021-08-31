@@ -232,5 +232,6 @@ span {
   .game-title {
     font-size: 3.5rem;
     width: 100%;
+    color: red;
   }
 }
