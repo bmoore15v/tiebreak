@@ -192,7 +192,7 @@ span {
   .container {
     margin-top: 7%;
   }
-  
+
   .game-title {
     font-size: 4.5rem;
     width: 100%;
@@ -222,10 +222,10 @@ span {
     top: 45px;
     left: 10%;
   }
-  
+
   .tool-tip:active .tool-tip-text {
     visibility: visible;
-  ]
+  }
 
   p {
     font-size: 1.5rem;
@@ -234,10 +234,11 @@ span {
 
 @media (max-width: 500px) {
   .game-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     width: 100%;
-  ]
-    .icon {
+  }
+
+  .icon {
     display: none;
   }
 }
