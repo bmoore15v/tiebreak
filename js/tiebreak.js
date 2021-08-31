@@ -1,13 +1,16 @@
+// Get random dice pic on screen load
 window.onload = startDice;
 
-document.body.onkeyup = function spaceRoll(e) {
-  if (e.keyCode == 32) {
+// Allow roll button to be triggered by hitting space
+document.body.onkeyup = function spaceRoll(spaceStart) {
+  if (spaceStart.keyCode == 32) {
     changeDice();
   } else {
     return;
   }
 };
 
+// Array of dice images
 var dicePics = [
   "images/dice1.png",
   "images/dice2.png",
@@ -17,6 +20,7 @@ var dicePics = [
   "images/dice6.png",
 ];
 
+// Get random image of dice for both players // called on window.load
 function startDice() {
   var randomNum1 = Math.floor(Math.random() * dicePics.length);
   document.querySelector("img.img1").src = dicePics[randomNum1];
@@ -27,6 +31,7 @@ function startDice() {
   console.log(randomNum2);
 }
 
+// Change dice on button click // Identify winner // Run reset function
 function changeDice() {
   var randomNum1 = Math.floor(Math.random() * dicePics.length);
   document.querySelector("img.img1").src = dicePics[randomNum1];
@@ -46,18 +51,17 @@ function changeDice() {
   return resetText();
 }
 
+// Change roll button to reset button // Reload page on clck
 function resetText() {
   document.querySelector("#buttonReset").textContent = "Click to Reset";
-  document.querySelector("#buttonReset").setAttribute("onclick", "resetDice()");
-  document.body.onkeyup = function spaceRoll(e) {
-    if (e.keyCode == 32) {
-      resetDice();
+  document
+    .querySelector("#buttonReset")
+    .setAttribute("onclick", "location.reload()");
+  document.body.onkeyup = function spaceRoll(spaceReset) {
+    if (spaceReset.keyCode == 32) {
+      location.reload();
     } else {
       return;
     }
   };
-}
-
-function resetDice() {
-  location.reload();
 }
