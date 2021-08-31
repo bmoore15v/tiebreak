@@ -1,0 +1,225 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.game-title {
+  margin: auto;
+}
+
+.instructions {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+  margin: 15px auto;
+}
+
+.icon {
+  font-size: 1rem;
+  position: relative;
+  bottom: 15px;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+.winner {
+  text-align: center;
+  display: inline-block;
+}
+
+.rollBtn {
+  color: #393e46;
+  background-color: #4ecca3;
+}
+
+.rollBtn:hover {
+  color: #fff;
+  background-color: #4ecca9;
+}
+
+.flagFlip {
+  transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tool-tip .tool-tip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #232931;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 1rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tool-tip:hover .tool-tip-text {
+  visibility: visible;
+}
+
+body {
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 20px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ecca3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+  margin: 15px auto;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 3%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+button {
+  margin: 2rem auto;
+  font-family: "Indie Flower", cursive;
+  line-height: inherit;
+  text-transform: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+span {
+  display: inline-block;
+  margin: auto;
+}
+
+@media (max-width: 1215px) {
+  .game-title {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 1145px) {
+  .game-title {
+    font-size: 6.5rem;
+  }
+}
+
+@media (max-width: 1005px) {
+  .game-title {
+    font-size: 6rem;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 932px) {
+  .game-title {
+    font-size: 5.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 805px) {
+  .game-title {
+    font-size: 5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    display: flex;
+  }
+
+  .dice {
+    flex: 1;
+  }
+
+  img {
+    width: 60%;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 734px) {
+  .game-title {
+    font-size: 4.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 664px) {
+  .game-title {
+    font-size: 4.5rem;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .tool-tip .tool-tip-text {
+    visibility: hidden;
+    width: 300px;
+    background-color: #232931;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 1rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 10%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
